@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About US and Contact Us</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<nav class="main-nav solid">
+    <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Logo">
+        <span>Berimbolo Security</span>
+    </a>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">products</a>
+        <a href="service.html">services</a>
+        <a href="aboutUs.html">About Us</a>
+    </div>
+
+    <div class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+</nav>
+
+<section class="about">
+    <video autoplay muted loop playsinline class="video-bg">
+        <source src="images/CCTV Camera Effect.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="content">
+        <h1>About Us</h1>
+        <p>
+            Berimbolo Security is a modern security company dedicated to protecting 
+            homes and businesses. We provide alarm systems, video surveillance, 
+            access control, and 24/7 monitoring to ensure safety at all times.
+        </p>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="contact-content">
+        <h1>Contact Us</h1>
+        <p>If you need our services please fill in this form</p>
+
+        <form action="submit_contact.php" method="post" class="contact-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="number">Phone Number</label>
+            <input type="tel" id="number" name="number" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" required>
+
+            <label for="problem">Problem / Message</label>
+            <textarea id="problem" name="problem" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+<script src="script.js"></script>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2026 Berimbolo Security. All Rights Reserved.</p>
+    <p>Email: info@berimbolosecurity.com | Phone: +123 456 7890</p>
+  </div>
+</footer>
+</body>
+</html> 
